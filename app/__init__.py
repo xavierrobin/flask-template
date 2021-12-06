@@ -14,7 +14,6 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
 
     # Flask-Admin
-    app.config['FLASK_ADMIN_SWATCH'] = 'default'
     admin = Admin(app, template_mode='bootstrap4')
 
     class UserModelView(ModelView):
